@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurenz Gabriel N. Soriano - Portfolio</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+    <header>
+        <h1>Laurenz Gabriel N. Soriano</h1>
+        <p>First Year BSIT student</p>
+        <nav>
+            <ul>
+                <li><a href="#personal">Personal Information</a></li>
+                <li><a href="#education">Educational Background</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#java">Java Code</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <p><strong>Full Name:</strong> Laurenz Gabriel N. Soriano</p>
+            <p><strong>Email:</strong> <a href= laurenzsoriano089@gmail.com></a></p>
+            <p><strong>Phone:</strong> 09383028177</p>
+            <p><strong>Location:</strong> Subol, Guimba, Nueva Ecija</p>
+            <h3>About Me</h3>
+            <p>Hello! I am Laurenz Gabriel N. Soriano, I'm 19 years old and I live in Guimba, Nueva Ecija. I'm a first year BSIT student from OLSCHO, I took BSIT course because i want to create a game. My hobies are playing online games and sleeping. </p>
+            <img src=/Users/admin/Downloads/35ee00c6-d153-4d4e-bff5-a553cba00a29.jpeg alt="Photo of Laurenz Gabriel Soriano" class="profile-photo">
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <div class="card">
+                <h3>Our lady of the sacred heart college of guimba</h3>
+                <p>Bachelor of Science in Information Technology</p>
+                <p>2026-2027</p>
+            </div>
+            <div class="card">
+                <h3>BLUN</h3>
+                <p>STEM</p>
+                <p>2023-2024</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <h3>Tools and Other Skills</h3>
+            <ul>
+                <li>GitHub</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </section>
+
+        <section id="java">
+            <h2>Java Code</h2>
+            <p>This is my final Performance Task in CC102: Vehicle Fuel Efficiency Tracker.</p>
+            <pre><code>import java.util.Scanner;
+
+                public class exam {
+                
+                    public static void main(String[] args) {
+                        Scanner hi = new Scanner(System.in);
+                
+                        double[] distances = new double[10];
+                        double[] fuelLiters = new double[10];
+                        double[] efficiencies = new double[10];
+                
+                        for (int i = 0; i < 10; i++) {
+                            System.out.print("Enter distance for vehicle " + (i + 1) + " (km): ");
+                            distances[i] = hi.nextDouble();
+                
+                            System.out.print("Enter fuel for vehicle " + (i + 1) + " (liters): ");
+                            fuelLiters[i] = hi.nextDouble();
+                        }
+                
+                        for (int i = 0; i < 10; i++) {
+                            efficiencies[i] = distances[i] / fuelLiters[i];
+                            System.out.println("Vehicle " + (i + 1) + ": " + efficiencies[i] + " km/L");
+                        }
+                
+                        int best = 0;
+                        int worst = 0;
+                        for (int i = 1; i < 10; i++) {
+                            if (efficiencies[i] > efficiencies[best]) {
+                                best = i;
+                            }
+                            if (efficiencies[i] < efficiencies[worst]) {
+                                worst = i;
+                            }
+                        }
+                
+                        System.out.println("Most fuel-efficient: Vehicle " + (best + 1));
+                        System.out.println("Least fuel-efficient: Vehicle " + (worst + 1));
+                    }
+                }</code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Laurenz Gabriel N. Soriano . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
